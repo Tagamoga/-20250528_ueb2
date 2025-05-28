@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'python -m venv $VENV_PATH'
+                sh 'python3 -m venv $VENV_PATH'
                 sh './$VENV_PATH/bin/pip install -r requirements.txt'
             }
         }
